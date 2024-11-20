@@ -12,8 +12,12 @@ import java.sql.SQLException;
  *
  * @author JEIFER ALCALA
  */
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
 public class ConnectionDbMySql {
- 
+
     private static final String DB_URL = "jdbc:mysql://localhost:3306/events_web";
     private static final String USER = "root";
     private static final String PASSWORD = "";
@@ -35,5 +39,4 @@ public class ConnectionDbMySql {
         return conn;
     }
 
-    
 }

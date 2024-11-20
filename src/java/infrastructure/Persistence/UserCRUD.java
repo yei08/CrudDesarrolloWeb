@@ -3,20 +3,22 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package infrastructure.Persistence;
-   
-    import Domain.Model.User;
-    import Infrastructure.Database.ConnectionDbMySql;
-    import java.sql.*;
-    import java.util.ArrayList;
-    import java.util.List;
-    import Business.Exceptions.DuplicateUserException;
-    import Business.Exceptions.UserNotFoundException;
 /**
  *
  * @author JEIFER ALCALA
  */
+
+import Domain.Model.User;
+import Infrastructure.Database.ConnectionDbMySql;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+import Business.Exceptions.DuplicateUserException;
+import Business.Exceptions.UserNotFoundException;
+
 public class UserCRUD {
-     public List<User> getAllUsers() {
+
+    public List<User> getAllUsers() {
         List<User> users = new ArrayList<>();
         String query = "SELECT * FROM user";
 
@@ -176,4 +178,3 @@ public class UserCRUD {
         return users;
     }
 }
-
