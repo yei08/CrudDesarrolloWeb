@@ -6,7 +6,7 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="Domain.Model.User"%>
-
+<%@page import="Business.Services.*"%>
 
 <!DOCTYPE html>
 <html>

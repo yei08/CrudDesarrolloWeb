@@ -9,12 +9,10 @@
 <%@page import ="java.sql.SQLException"%>
 <%@page import ="Business.Exceptions.DuplicateUserException"%>
 <%@page import ="java.io.IOException"%> <!-- IMPORTACION DE IOExecption -->
-
 <%@page import ="jakarta.servlet.ServletException"%> <!-- IMPORTACION DE servletException -->
 <%@page import ="jakarta.servlet.http.HttpServletRequest"%> <!-- IMPORTACION DE httpServletRequest -->
 <%@page import ="jakarta.servlet.http.HttpServletResponse"%> <!-- IMPORTACION DE httpServletResponse -->
 <%@page import ="jakarta.servlet.http.HttpSession"%> <!-- IMPORTACION DE httpSession -->
-
 <%@page import ="Business.Services.UserService"%>
 <%@page import ="Business.Exceptions.UserNotFoundException"%>
 
@@ -95,13 +93,13 @@
     }
 
 
-    //Mostrar el formulario de creaci�n de usuario
+    //Mostrar el formulario de creaci?n de usuario
     private void showCreateUserForm(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.sendRedirect(request.getContextPath() + "/Views/Forms/Users/create.jsp");
     }
 
-    //Metodo para crear un nuevo usuario (deslues de enviar el formualio de creaci�n)
+    //Metodo para crear un nuevo usuario (deslues de enviar el formualio de creaci?n)
     private void handleCreateUser(HttpServletRequest request, HttpServletResponse response, HttpSession session, UserService userService)
             throws ServletException, IOException {
         String name = request.getParameter("name");
