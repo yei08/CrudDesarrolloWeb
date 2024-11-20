@@ -8,6 +8,9 @@ package Business.Exceptions;
  *
  * @author JEIFER ALCALA
  */
-public class DuplicateUserException {
-    
+public class DuplicateUserException extends Exception {
+
+    public DuplicateUserException(String message) {
+        super(message);
+    }
 }
