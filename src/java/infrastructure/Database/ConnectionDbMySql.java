@@ -12,9 +12,6 @@ import java.sql.SQLException;
  *
  * @author JEIFER ALCALA
  */
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
 
 public class ConnectionDbMySql {
 
